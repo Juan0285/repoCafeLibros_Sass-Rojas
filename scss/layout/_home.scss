@@ -1,0 +1,66 @@
+
+
+
+
+.sombreado{
+    background-color: antiquewhite;
+    height: 200px;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+:hover{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+
+.imagencita{
+    max-width: 596px;
+    height: auto;
+}
+
+
+/* -------Logo whastapp--------- */
+
+#logo_whastapp{
+    position: fixed;
+    bottom: 10vh;
+    right: 5%;
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+#logo_whastapp:hover{
+    transform: tamaño_Achicado1;
+}
+
+/* ------mediaQuery----- */
+
+@media screen and (max-width: 1298px) {
+    .imagencita{
+        max-width: 450px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1098px) {
+    .imagencita{
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 960px) {
+        .imagencita{
+            max-width: 290px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h5 {
+            display: none;
+        }
+
+        p {
+            display: none;
+        }
+}

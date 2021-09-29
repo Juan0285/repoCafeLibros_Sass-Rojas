@@ -1,0 +1,22 @@
+
+@import "variables.scss";
+
+
+.tamañoLet{
+    font-size: $tamañoLetraUno;
+}
+
+
+.sobre1_img{
+    transition-property: all;
+    transition-duration: .5s;
+}
+.sobre1_img:hover{
+    transform: $tamaño_Achicado2;
+    background-color: $colorTres;
+}
+
+
+.fondoCol{
+    background-color: $coloruno;
+}

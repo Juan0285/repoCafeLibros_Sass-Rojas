@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+.sobre_img{
+    transition-property: all;
+    transition-duration: .5s;
+}
+.sobre_img:hover{
+    transform: $tamaño_Achicado1;
+}
