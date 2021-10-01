@@ -1,0 +1,49 @@
+
+
+
+.fondo_img1{
+    background-image: url(../../img/main/local/cafeteria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fondo_img2{
+    background-image: url(../../img/main/local/pasteleria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fondo_img3{
+    background-image: url(../../img/main/local/panaderia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    font-size: $tamañoLetraDos;
+
+    td{
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+    }
+
+}

@@ -13,11 +13,11 @@
 </head>
 <body>
 
-     <!-- >>>>>>>>>>>RAMA2>>>>>>>>>>>>>>>>>>>>>>>>> -->
+     <!-- >>>>>>>>>>>RAMA3 --version SASS>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
-     <div class="fixed-top">
+     <header class="fixed-top">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -51,75 +51,84 @@
             </div>
           </nav>
         </div>
-      </div>
+      </header>
 
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
 
-      <main class="container margenSup">
+      <main class="container-fluid margenSup_Cont bg-secondary pt-5 pb-1">
+        <h1>Estamos en contacto</h1>
         <section class="row">
 
           <!-- -------------------MAPA------------------- -->
 
-            <div class="col-12 col-md-6">
-              <img src="img/main/Contacto/mapa.png" alt="" class="img-fluid">
-            </div>
+          <!-- <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-8 col-xxl-8"> -->
+
+            <div class="container cuadro">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.523249550461!2d-58.991056484782106!3d-27.452964922564323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450dac50ae99cf%3A0x8d07c31f561c3eb6!2sCaf%C3%A9%20y%20Libros!5e0!3m2!1ses!2sar!4v1633051576901!5m2!1ses!2sar" class="mapita" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
           
            <!-- -------------------FORMULARIO------------------- -->
 
-            <div class="col-12 col-md-6 bg-secondary bg-opacity-25 pt-3">
+                <div class=" bg-white bg-opacity-50 pt-3 formulario">
 
-              <!-- ----Nombre y apellido---- -->
+                  <!-- ----Nombre y apellido---- -->
 
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                  </div>
+
+                  <!-- ----Email---- -->
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+
+                  <!-- ----Selector de Ciudad---- -->
+
+                  <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>¿Desde donde nos escribis?</option>
+                    <option value="1">Resistencia</option>
+                    <option value="2">Corrientes</option>
+                    <option value="3">Resto del Pais</option>
+                  </select>
+
+                  <!-- ----Area de comentario---- -->
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <!-- ----boton "enviar" comentario---- -->
+
+                  <button type="button" class="btn btn-success mb-3">¡Mandanos!</button>
+
+                  <!-- ----opción (deseas recibir publicidad?)---- -->
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Si, Me gustaría recibir publicidad.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      No, no me gustaría recibir publicidad.
+                    </label>
+                  </div>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
-                </div>
-              </div>
 
-              <!-- ----Email---- -->
+            <!-- -------------------IMAGEN------------------- -->
+                
+                <div class="img_contacto"></div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-
-              <!-- ----Selector de Ciudad---- -->
-
-              <select class="form-select mb-3" aria-label="Default select example">
-                <option selected>¿Desde donde nos escribis?</option>
-                <option value="1">Resistencia</option>
-                <option value="2">Corrientes</option>
-                <option value="3">Resto del Pais</option>
-              </select>
-
-              <!-- ----Area de comentario---- -->
-
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu comentario</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-
-              <!-- ----boton "enviar" comentario---- -->
-
-              <button type="button" class="btn btn-success mb-5">¡Mandanos!</button>
-
-              <!-- ----opción (deseas recibir publicidad?)---- -->
-
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Si, Me gustaría recibir publicidad.
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  No, no me gustaría recibir publicidad.
-                </label>
-              </div>
             </div>
         </section>
 
@@ -130,7 +139,7 @@
        
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
 
-    <footer class="footer">
+    <footer class="footer container-fluid">
         <div class="footer__div">
             <a href="https://facebook.com">
                 <img src="img/footer/Facebook.png" alt="facebook"></a>

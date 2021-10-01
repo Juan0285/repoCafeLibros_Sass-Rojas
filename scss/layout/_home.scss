@@ -1,22 +1,104 @@
 
+@import "variables.scss";
 
-
-
-.sombreado{
-    background-color: antiquewhite;
+.cuadrante{
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: all;
     transition-duration: .5s;
+
+    
+    .beneficios{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height: 100%;
+        
+            h3{
+                font-size: $tamañoLetraUno;
+                text-align: center;
+                color: $colorCuatro;
+            }
+            h4{
+                font-size: $tamañoLetraChica;
+                text-align: center;
+                color: $coloruno;
+                font-family: 'Roboto', sans-serif;
+                font-weight: lighter;
+                } 
+            .beneficio_1{
+                font-family: 'Finger Paint', cursive;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+                .beneficio_1:hover{
+                    color: $colorSeis;
+                }
+            .beneficio_2{
+                font-family: 'Lobster', cursive;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+                .beneficio_2:hover{
+                color: $colorSeis;
+                }
+            .beneficio_3{
+                font-family: 'Major Mono Display', monospace;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+                .beneficio_3:hover{
+                color: $colorSeis;
+                }
+            .beneficio_4{
+                font-family: 'Monoton', cursive;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+                .beneficio_4:hover{
+                color: $colorSeis;
+                }
+            .beneficio_5{
+                font-family: 'Permanent Marker', cursive;
+                transition-property: all;
+                transition-duration: .5s;
+            }
+                .beneficio_5:hover{
+                color: $colorSeis;
+                }
+
+            .beneficio_6{
+                font-family: 'Cinzel Decorative', cursive;
+                font-weight: 700;
+            }
+                .beneficio_6:hover{
+                color: $colorSeis;
+                }
+                 
+    }
 }
 
-:hover{
-    background-color: rgba(0, 0, 0, .3);
+.cuadrante:hover{
+    background-color: $colorCuadranteHome;
 }
 
 
-.imagencita{
+/* -------Logo bar en carrusel--------- */
+
+.logoBarcito{
     max-width: 596px;
     height: auto;
+}
+
+.sombra_logo{
+   filter: drop-shadow(20px, 40px, 5px,$colorTres); 
+
 }
 
 
@@ -31,8 +113,47 @@
 }
 
 #logo_whastapp:hover{
-    transform: tamaño_Achicado1;
+    transform: $tamaño_Achicado1;
 }
+
+/* -------botones carrusel (PARA LLEVAR / EN EL LOCAL)--------- */
+
+@mixin but($ancho, $alto, $fondoColor, $puntasRedondas, $margensup, $padding,$border,$color) {
+    width: $ancho;
+    height: $alto;
+    background-color: $fondoColor;
+    border-radius: $puntasRedondas;
+    margin-top: $margensup;
+    padding: $padding;
+    border: $border;
+    color: $color;
+
+}
+
+// -----------Boton amarillo--------------
+.boton_1 {
+    @include but (102px, 38px, $colorDos,3px,2px,2px,none,$coloruno);
+    transition-property: all;
+    transition-duration: .5s;
+}
+
+    .boton_1:hover{
+        background-color: $colorSeis;
+    }
+
+
+// -----------Boton verde--------------
+.boton_2 {
+    @include but (102px, 38px, $colorCinco,3px,2px,2px,none,$colorSeis);
+    transition-property: all;
+    transition-duration: .5s;
+}
+    .boton_2:hover{
+        background-color: $colorSeis;
+        color: $coloruno;
+    }
+
+
 
 /* ------mediaQuery----- */
 
