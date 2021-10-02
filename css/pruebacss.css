@@ -199,7 +199,7 @@
 .img_contacto {
   width: 33%;
   height: 100%;
-  background-image: url(../../img/main/Contacto/img_contacto.jpg);
+  background-image: url(../img/main/Contacto/img_contacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px; }
@@ -278,7 +278,7 @@ h1 {
 .alto_fila {
   height: 82.5vh; }
   .alto_fila .fondo_img1 {
-    background-image: url(../../img/main/local/cafeteria.jpg);
+    background-image: url(../img/main/local/cafeteria.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -287,7 +287,7 @@ h1 {
     align-items: center;
     height: 100%; }
   .alto_fila .fondo_img2 {
-    background-image: url(../../img/main/local/pasteleria.jpg);
+    background-image: url(../img/main/local/pasteleria.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -296,7 +296,7 @@ h1 {
     align-items: center;
     height: 100%; }
   .alto_fila .fondo_img3 {
-    background-image: url(../../img/main/local/panaderia.jpg);
+    background-image: url(../img/main/local/panaderia.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
