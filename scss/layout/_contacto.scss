@@ -12,7 +12,8 @@
     .cuadro{
         display: flex;
         justify-content: space-around;
-        flex-wrap: wrap;     
+        flex-wrap: wrap; 
+        height: 60vh;    
     }
 
 }
@@ -30,6 +31,7 @@
 
 .img_contacto{
     width:33%;
+    height: 100%;
     background-image: url(../../img/main/Contacto/img_contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;

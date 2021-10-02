@@ -184,7 +184,8 @@
   .margenSup_Cont .cuadro {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    height: 60vh; }
 
 .mapita {
   width: 33%;
@@ -197,6 +198,7 @@
 
 .img_contacto {
   width: 33%;
+  height: 100%;
   background-image: url(../../img/main/Contacto/img_contacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,40 +275,42 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat; } }
 
-.fondo_img1 {
-  background-image: url(../../img/main/local/cafeteria.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.fondo_img2 {
-  background-image: url(../../img/main/local/pasteleria.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.fondo_img3 {
-  background-image: url(../../img/main/local/panaderia.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  font-size: 60px; }
-  h3 td {
+.alto_fila {
+  height: 82.5vh; }
+  .alto_fila .fondo_img1 {
+    background-image: url(../../img/main/local/cafeteria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .alto_fila .fondo_img2 {
+    background-image: url(../../img/main/local/pasteleria.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .alto_fila .fondo_img3 {
+    background-image: url(../../img/main/local/panaderia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .alto_fila h3 {
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter; }
+    font-weight: bolder;
+    font-size: 40px; }
+    .alto_fila h3 td {
+      font-family: 'Roboto', sans-serif;
+      font-weight: lighter; }
 
 * {
   margin: 0;
