@@ -1,59 +1,428 @@
 
 @import "variables.scss";
 
-
 .footer{
-    width: 100%;
-    height: 8vh;
-    background-color: $coloruno;
+    background-color:$coloruno ;
+    height: 300px;
     display: flex;
-    justify-content: flex-start;
-   
- 
-        .footer__div {
-            height: 100%;
-            width: 10%;
+    align-items: center;
+    
+    
+    .cuadrante{
+        display: flex;
+        height:90% ;
+        align-items: center;
+        
+       
+
+        .redes{
+            background-color:$coloruno ;
             display: flex;
+            flex-direction: column;
+            height: 100%;
             align-items: center;
-            justify-content: space-evenly;
-            
-
-                    a {
-                    height: 70%;
-                    display: flex;
-                    justify-content: center;
-
-                        img {
-                            height: 100%;
-                        }
+            justify-content: center;
+    
+                .seguinos{
+                    h5{
+                        color: $colorSeis; 
+                        text-align: center;
+                        font-size: 13px;
+                    }
 
                 }
+                .iconos{
+                    display: flex;
+                    justify-content: space-evenly;
+                    // height: 100%;
+                    width: 100%;
                 
+                            a{
+                                height:80% ;
+                                
+                
+
+                                img{
+                                    height:100%;
+                                }
+                            }
+    
+                }
         }
 
+        .infoBar{
+            color:$colorSeis;
+            border-left: .5px solid white;
 
-    }
-
-//    mediaQuery
-
-
-    
-
-    @media screen and (max-width: 1024px) {
-        .footer{
+            h4{
+                font-size: 15px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
         
-            .footer__div {
-                width: 20%;
-                padding-left:3% ;  }
+        .mensaje{
+            // height: 70%;
+
         }
+
+    
+
+
+
+    }
+    
+    
+
+}
+
+/* ------mediaQuery----- */
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    
+
+    .footer{
+        background-color:$coloruno ;
+        // height: 250px;
+        display: flex;
+        align-items: center;
+        
+        
+        .cuadrante{
+            display: flex;
+            height:90% ;
+            align-items: center;
+            
+           
+    
+            .redes{
+                background-color:$coloruno ;
+                display: flex;
+                flex-direction: column;
+                height: 20%;
+                align-items: center;
+                justify-content: center;
+        
+                    .seguinos{
+                        h5{
+                            color: $colorSeis; 
+                            text-align: center;
+                            font-size: 13px;
+                        }
+    
+                    }
+                    .iconos{
+                        display: flex;
+                        justify-content: space-evenly;
+                        // height: 100%;
+                        width: 100%;
+                    
+                                a{
+                                    height:80% ;
+                                    
+                    
+    
+                                    img{
+                                        height:100%;
+                                    }
+                                }
+        
+                    }
+            }
+    
+            .infoBar{
+                color:$colorSeis;
+                border-left: .5px solid white;
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+            
+            .mensaje{
+                // height: 70%;
+    
+            }
+    
+        
+    
+    
+    
+        }
+        
+        
     
     }
 
-    @media screen and (max-width: 540px) {
-        .footer{
+
+
+}
+
+@media screen and (max-width:992px) {
+    
+
+    .footer{
+        background-color:$coloruno ;
+        height: 400px;
+        display: flex;
+        align-items: center;
         
-            .footer__div {
-                width: 30%;  }
+        
+        .cuadrante{
+            display: flex;
+            height:90% ;
+            align-items: center;
+            
+           
+    
+            .redes{
+                background-color:$coloruno ;
+                display: flex;
+                flex-direction: column;
+                height: 5%;
+                align-items: center;
+                justify-content: center;
+        
+                    .seguinos{
+                        h5{
+                            color: $colorSeis; 
+                            text-align: center;
+                            font-size: 13px;
+                        }
+    
+                    }
+                    .iconos{
+                        display: flex;
+                        justify-content: space-evenly;
+                        // height: 100%;
+                        width: 100%;
+                    
+                                a{
+                                    height:80% ;
+                                    
+                    
+    
+                                    img{
+                                        height:100%;
+                                    }
+                                }
+        
+                    }
+            }
+    
+            .infoBar{
+                color:$colorSeis;
+                border-left: .5px solid white;
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 13px;
+                    display: block;
+                }
+            }
+            
+            .mensaje{
+                // height: 70%;
+    
+            }
+    
+        
+    
+    
+    
         }
+        
+        
     
     }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+    
+
+    .footer{
+        background-color:$coloruno ;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        
+        
+        .cuadrante{
+            display: flex;
+            height:90% ;
+            align-items: center;
+            
+           
+    
+            .redes{
+                background-color:$coloruno ;
+                display: flex;
+                flex-direction: column;
+                height: 20%;
+                align-items: center;
+                justify-content: center;
+        
+                    .seguinos{
+                        h5{
+                            color: $colorSeis; 
+                            text-align: center;
+                            font-size: 10px;
+                            display: block;
+                        }
+    
+                    }
+                    .iconos{
+                        display: flex;
+                        justify-content: space-evenly;
+                        // height: 100%;
+                        width: 100%;
+                    
+                                a{
+                                    height:80% ;
+                                    
+                    
+    
+                                    img{
+                                        height:100%;
+                                    }
+                                }
+        
+                    }
+            }
+    
+            .infoBar{
+                color:$colorSeis;
+            
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                    display: block;
+                }
+                
+            }
+            
+            .mensaje{
+                // height: 70%;
+    
+            }
+    
+        
+    
+    
+    
+        }
+        
+        
+    
+    }
+
+
+
+}
+
+@media screen and (max-width:540px) {
+    
+
+    .footer{
+        background-color:$coloruno ;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        
+        
+        .cuadrante{
+            display: flex;
+            height:80% ;
+            align-items: center;
+            
+           
+    
+            .redes{
+                background-color:$coloruno ;
+                display: flex;
+                flex-direction: column;
+                height: 5%;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+        
+                    .seguinos{
+                        h5{
+                            color: $colorSeis; 
+                            text-align: center;
+                            font-size: 13px;
+                            display: block;
+                        }
+    
+                    }
+                    .iconos{
+                        display: flex;
+                        justify-content: space-evenly;
+                        // height: 100%;
+                        width: 100%;
+                    
+                                a{
+                                    height:80% ;
+                                    
+                    
+    
+                                    img{
+                                        height:100%;
+                                    }
+                                }
+        
+                    }
+            }
+    
+            .infoBar{
+                color:$colorSeis;
+                border-left: none;
+                
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 11px;
+                    display: block;
+                }
+            }
+            
+            .mensaje{
+                // height: 70%;
+    
+            }
+    
+        
+    
+    
+    
+        }
+        
+        
+    
+    }
+
+
+
+}
+
+
+
+
+
+

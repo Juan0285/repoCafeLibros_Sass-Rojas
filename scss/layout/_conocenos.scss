@@ -12,6 +12,7 @@
     background-color: $coloruno;
 
     .sobre1_img{
+        position: relative;
         transition-property: all;
         transition-duration: .5s;
     }
@@ -19,6 +20,5 @@
         transform: $tamaño_Achicado2;
         background-color: $colorTres;
     }
-
-
+ 
 }

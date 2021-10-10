@@ -1,32 +1,43 @@
 @import "variables.scss";
 
+.alturacuadro{
+    
+    height: 100%;
 
 
-
-// --------------Efecto Hover sobre las fotos de los productos---------
-.sobre_img{
-    transition-property: all;
-    transition-duration: .5s;
-}
-    .sobre_img:hover{
-        transform: $tamaño_Achicado1;
+    .alto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:stretch;
     }
+        
+
+        // --------------Efecto Hover sobre las fotos de los productos---------
+        .sobre_img{
+            transition-property: all;
+            transition-duration: .5s;
+        }
+            .sobre_img:hover{
+                transform: $tamaño_Achicado1;
+            }
 
 
-// --------------Detalles del precio y el nombre de los productos---------
+        // --------------Detalles del precio y el nombre de los productos---------
 
-.Precio{
-    font-size: $tamañoLetraUno;
-    font-family: 'Lobster', cursive;
+        .Precio{
+            font-size: $tamañoLetraUno;
+            font-family: 'Lobster', cursive;
+        }
+
+        .Prod_name{
+            font-size: $tamañoLetraChica;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color:$colorTres;
+        }
+
 }
-
-.Prod_name{
-    font-size: $tamañoLetraChica;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    color:$colorTres;
-}
-
 
 
 

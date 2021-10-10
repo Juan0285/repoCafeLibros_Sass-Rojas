@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuestro café, nuestra pasteleria y nuestra panadería, son obligados de esta ciudad, pero nuestra atención, es un deleite, que disfrutamos brindandotela.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pruebacss.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>En el local</title>
+    <title>Menú en el local</title>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
      
      <header class="fixed-top">
-        <div class="container-fluid">
+        <div>
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt="..."></a>
@@ -286,13 +287,44 @@
 
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
 
-    <footer class="footer">
-        <div class="footer__div">
-            <a href="https://facebook.com">
-                <img src="img/footer/Facebook.png" alt="facebook"></a>
-            <a href="https://instagram.com">
-                <img src="img/footer/Instagram.png" alt="instagram"></a>
-        </div>
+    <footer class="footer container-fluid">
+      <div class="row cuadrante">
+          <div class="col-9 col-md-3 col-lg-2 col-xl-2 redes">
+                <div class="seguinos">
+                  <h5>Seguinos en</h5>
+                </div>
+                <div class="iconos">
+                  <a href="https://facebook.com">
+                    <img src="img/footer/Facebook.png" alt="facebook"></a>
+                <a href="https://instagram.com">
+                    <img src="img/footer/Instagram.png" alt="instagram"></a>
+              </div>  
+          </div>
+          <div class="col-9 col-md-6 col-lg-6 col-xl-4 infoBar">
+            <h4>¿Cómo Nacimos?</h4>
+            <p>Café & Libros, nació en 2013. Es una pequeña pyme llevada adelante por su antigua encargada Amalia Paz, que compró el fondo de comercio del antiguo bar, Lo renombro y le dió un estilo único en la ciudad. Lo que nos distingue no solo es la atmósfera artística, sino nuestra atención.</p>
+          </div>
+
+
+          <div class="col-9 col-md-9 col-lg-8 col-xl-2 mensaje">
+
+            <!-- ----Nombre y apellido---- -->
+
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control mb-1" placeholder="Nombre y Apellido" aria-label="First name">
+                <label for="exampleFormControlTextarea1" class="form-label text-white">Escribinos tu comentario</label>
+              <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="2"></textarea>
+              <button type="button" class="btn btn-success mb-3">¡Mandanos!</button>
+              </div>
+            </div>
+
+            
+
+            
+
+          </div>
+      </div>
     </footer>
 
 
