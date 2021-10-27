@@ -14,13 +14,24 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-
+// --------Margen superior para separar el navagador del contenido--------
 .margenSup{
     margin-top: 76px;
     justify-content: center;
+}
+
+// --------Título del contendio--------
+
+
+.titulo_cont {
+    color: $colorSeis;
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: start;
 }
 
 // ---------------------------------------

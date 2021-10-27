@@ -1,75 +1,146 @@
 
-.alto_fila{
-    height: 82.5vh;
+section.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 30px;
+    column-gap: 15px;
 
-    .fondo_img1{
-        background-image: url(../img/main/local/cafeteria.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+    .titulo{
+        grid-column: span 3;
+        background-image: linear-gradient(to left, #ffc107, #db7f06);
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        margin-bottom: 15px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 100%;
-    }
+        padding-left: 30px;
+
     
-    
-    
-    .fondo_img2{
-        background-image: url(../img/main/local/pasteleria.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    
-    }
-    
-    .fondo_img3{
-        background-image: url(../img/main/local/panaderia.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-    
-    
-    
-    h3 {
-        font-family: 'Roboto', sans-serif;
-        font-weight:bolder;
-        font-size: $tamañoLetraUno;
-    
-        td{
-            font-family: 'Roboto', sans-serif;
-            font-weight: lighter;
-        }
-    
+        .form-select{
+            width: 20%;
+            margin:10px}
     }
 
+    .grid_item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        border-radius: 10px;
+        
+         
+         .table{
+             width: 90%;
+             font-family: 'Roboto', sans-serif;
+             font-size: 15px;
+             color: white;
+             position: relative;
+             --bs-table-hover-color: #363636;
+             --bs-table-hover-bg: rgba(238, 238, 238, 0.815);                 
+         }
 
+         h3{ 
+             font-family: 'Lobster', cursive;
+             font-size: 45px;
+             position: relative;
+            }
+    }
+
+    // ------foto de fondo de bloque cafeteria--------------
+    .img_cafeteria{
+        background-image: url(../img/main/local/img1.png);
+        background-size: cover;
+        background-position: -200px;
+        background-repeat: no-repeat;
+        position:relative;
+    }
+    // ------Efecto color gris en transparencia sobre foto cafeteria--------------
+    .img_cafeteria::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 36, 30);
+        position: absolute;
+        opacity: 0.5;
+        top:0px;
+        border-radius: 10px;
+    }
+
+    // ------foto de fondo de bloque Panaderia--------------
+    .img_panaderia{
+        background-image: url(../img/main/local/img3.png);
+        background-size: cover;
+        background-position: -300px;
+        background-repeat: no-repeat;
+        position:relative;
+    }
+    // ------Efecto color gris en transparencia sobre foto Panaderia--------------
+    .img_panaderia::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 36, 30);
+        position: absolute;
+        opacity: 0.5;
+        top:0px;
+        border-radius: 10px;
+    }
+    // ------foto de fondo de bloque Pasteleria--------------
+    .img_pasteleria{
+        background-image: url(../img/main/local/img2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position:relative;
+    }
+    // ------Efecto color gris en transparencia sobre foto Pasteleria--------------
+    .img_pasteleria::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(36, 36, 30);
+        position: absolute;
+        opacity: 0.5;
+        top:0px;
+        border-radius: 10px;
+    }
 
 }
 
+/* ------mediaQuery----- */
 
-
-
-    /*------mediaQuery----- */
-
-    
-    @media screen and (max-width: 1285px) {
-        .alto_fila{
-            height: 100%;
+@media screen and(max-width:1139px) {
+    section.contenedor{
+        .titulo{
+            grid-column: span 2;
+            margin-bottom: 5px;
         }
+        .img_cafeteria{ margin-top: 15px; background-position: -50px;}
+        .img_panaderia{ margin-top: 15px; background-position: -50px;}
+        .img_pasteleria{ margin-top: 15px; background-position: -50px;}
     }
-
-    
-    
-
+  
+}
+@media screen and(max-width:700px) {
+    section.contenedor{
+        .titulo{
+            height: 240px;
+            display:flex;
+            flex-direction: column;
+            grid-column: span 1;
+            justify-content: center;
+            margin-bottom: 5px;
+            .form-select{
+                width: 60%;
+                margin:10px}
+        }
+        .img_cafeteria{background-position: 0px;}
+        .img_panaderia{background-position: -50px;}
+        .img_pasteleria{background-position: 0px;}
+    }
+  
+}
 
 

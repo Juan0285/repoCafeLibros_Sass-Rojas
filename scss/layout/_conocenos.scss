@@ -4,21 +4,157 @@
 
 
 // --------------Efecto Hover sobre las fotos---------
+body{
+    font-size: 3rem;
 
+    // --------contenedor grande con 3 hijos (titulo / fotitos /foto grande)--------
+    .contenedor_1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 20px 10px 20px;
+        column-gap: 5px;
+        grid-auto-flow: dense;
+        background-color: $coloruno;
 
+        .wide{
+            grid-column: span 2;
+        }
 
+        // --------Foto grande de la derecha--------------
+        .foto_Grande{
+            background-image: url(../img/main/conocenos/fotogrande.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            height: 550px;   
+        }
 
-.fondoCol{
-    background-color: $coloruno;
+        // --------16 Fotitos chicas colocadas a la izquierda--------------
+        .fotitos {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+            grid-auto-rows: 150px;
+            grid-auto-flow: dense;
+            gap: 5px;
+            height: 550px;
+            overflow: auto;
+            padding: 0 10px;
 
-    .sobre1_img{
-        position: relative;
-        transition-property: all;
-        transition-duration: .5s;
+            // --------caracteristicas de cada recuadro de la foto--------------
+            .grid-item{
+                border-radius: 10px;
+                transition-property: all;
+                transition-duration: .5s;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            // --------links a cada una de las 16 fotos--------------
+            .item__img1{background-image: url(../img/main/conocenos/local1.png)}
+            .item__img2{background-image: url(../img/main/conocenos/local2.png)}
+            .item__img3{background-image: url(../img/main/conocenos/local3.png)}
+            .item__img4{background-image: url(../img/main/conocenos/local4.png)}
+            .item__img5{background-image: url(../img/main/conocenos/local5.png)}
+            .item__img6{background-image: url(../img/main/conocenos/local6.png)}
+            .item__img7{background-image: url(../img/main/conocenos/local7.png)}
+            .item__img8{background-image: url(../img/main/conocenos/local8.png)}
+            .item__img9{background-image: url(../img/main/conocenos/local9.png)}
+            .item__img10{background-image: url(../img/main/conocenos/local10.png)}
+            .item__img11{background-image: url(../img/main/conocenos/local11.png)}
+            .item__img12{background-image: url(../img/main/conocenos/local12.png)}
+            .item__img13{background-image: url(../img/main/conocenos/local13.png)}
+            .item__img14{background-image: url(../img/main/conocenos/local14.png)}
+            .item__img15{background-image: url(../img/main/conocenos/local15.png)}
+            .item__img16{background-image: url(../img/main/conocenos/local16.png)}
+
+             // --------Efecto al posicionarnos por encima de cada una de las fotos--------------
+            .grid-item:hover{
+                transform: scale(.97);
+                filter:opacity(0.8);
+                cursor: pointer;
+            }    
+            
+        }
     }
-    .sobre1_img:hover{
-        transform: $tamaño_Achicado2;
-        background-color: $colorTres;
-    }
+        
+    /* ------mediaQuery----- */
+
+    @media (min-width:600px) {  
+
+        .contenedor_1{
  
+             .titulo{
+                 grid-column: span 2;
+             }
+ 
+             .fotitos{
+
+                grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+                grid-auto-rows: 100px;
+                gap: 5px;
+                overflow: auto;
+                 
+                 .wide{
+                     grid-column: span 2;
+                 }
+ 
+                 .tall{
+                     grid-row: span 2;
+                 }
+             }
+    
+         }
+            
+     }
+
+    @media (max-width:800px) {  
+
+       .contenedor_1{
+
+            .foto_Grande{
+                height: 400px;
+            }
+            
+            .fotitos{
+                height: 400px; 
+            }
+   
+        }
+           
+    }
+
+    @media (max-width:599px) {  
+
+        .contenedor_1{
+ 
+             .titulo{
+                 grid-column: span 2;
+             }
+             
+             .foto_Grande{
+                margin: 10px;
+                grid-column: span 2;
+            }
+
+             .fotitos{
+                margin: 5px;
+                grid-column: span 2;  
+
+                .wide{
+                    grid-column: span 2;
+                }
+
+                .tall{
+                    grid-row: span 2;
+                }
+             }
+    
+         }
+            
+     }
+    
 }
+
+

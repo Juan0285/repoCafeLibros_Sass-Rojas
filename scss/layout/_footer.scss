@@ -8,10 +8,11 @@
     align-items: center;
     
     
-    .cuadrante{
+    .cont_footer{
         display: flex;
         height:90% ;
         align-items: center;
+        justify-content: center;
         
        
 
@@ -86,12 +87,12 @@
 
     .footer{
         background-color:$coloruno ;
-        // height: 250px;
+        height: 400px;
         display: flex;
         align-items: center;
         
         
-        .cuadrante{
+        .cont_footer{
             display: flex;
             height:90% ;
             align-items: center;
@@ -166,7 +167,7 @@
         align-items: center;
         
         
-        .cuadrante{
+        .cont_footer{
             display: flex;
             height:90% ;
             align-items: center;
@@ -244,7 +245,7 @@
         // align-items: center;
         
         
-        .cuadrante{
+        .cont_footer{
             display: flex;
             height:90% ;
             align-items: center;
@@ -321,7 +322,7 @@
         align-items: center;
         
         
-        .cuadrante{
+        .cont_footer{
             display: flex;
             height:80% ;
             align-items: center;
@@ -329,7 +330,6 @@
            
     
             .redes{
-                background-color:$coloruno ;
                 display: flex;
                 flex-direction: column;
                 height: 5%;
@@ -349,7 +349,6 @@
                     .iconos{
                         display: flex;
                         justify-content: space-evenly;
-                        // height: 100%;
                         width: 100%;
                     
                                 a{

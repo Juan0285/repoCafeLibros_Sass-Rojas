@@ -1,6 +1,38 @@
 
 @import "variables.scss";
 
+
+//  -------Titulo principal--------- 
+
+.titulo_principal{
+    width: 100%;
+    background-color: $coloruno;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom:5px;
+
+    h1{
+        color: $colorSeis;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 35px;
+        text-align: start;
+    }
+
+}
+
+//  -------Logo bar en carrusel--------- 
+
+.logoBarcito{
+    max-width: 596px;
+    height: auto;
+}
+
+//  -------Beneficios--------- 
+
 .cuadrante{
     height: 200px;
     display: flex;
@@ -88,31 +120,6 @@
     background-color: $colorCuadranteHome;
 }
 
-
-/* -------Logo bar en carrusel--------- */
-
-
-.posicion {
-    z-index: 1000;
-    top:20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-
-.logoBarcito{
-    max-width: 596px;
-    height: auto;
-}
-
-.sombra_logo{
-   filter: drop-shadow(20px, 40px, 5px,$colorTres); 
-
-}
-
-}
-
 /* -------Logo whastapp--------- */
 
 #logo_whastapp{
@@ -188,11 +195,38 @@
             height: auto;
             margin-bottom: 20px;
         }
-        h5 {
+        h4.dirección {
             display: none;
         }
 
         p {
             display: none;
         }
+}
+
+@media screen and (max-width: 800px) {
+    .titulo_principal{
+            
+        h1{
+            
+            font-size: 30px;
+            
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .titulo_principal{
+        align-items: center;
+        h1{
+            
+            font-size: 22px;
+            justify-content: center;
+            text-align: center;
+            
+        }
+    
+    }
 }

@@ -19,7 +19,7 @@
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
     
-    <header class="fixed-top">
+     <header class="fixed-top">
       <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -27,6 +27,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- --------------links a las 5 paginas---------------- -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -43,8 +45,10 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>                
+                </li>               
               </ul>
+
+              <!-- --------------Buscadorde info, de productos---------------- -->
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -54,10 +58,11 @@
         </nav>
       </div>
     </header>
+
         
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
     <main class= "container margenSup mb-5">
-      <h1 class="text-warning">¡Elégí lo que quieras que te lo llevamos! </h1>
+      <h1 class="titulo_cont text-warning">¡Elégí lo que quieras que te lo llevamos! </h1>
         <section class="row alturacuadro">
 
           <!-- ------------Producto 1---------------------------- -->
@@ -467,121 +472,14 @@
             </div>
           </div>
         </div>
-      
-        </section> 
-
-
-<!-- --------------------------------------------------------------------------- -->
-
-      <!-- PROPUESTA PARA ARMAR LAS CARDS CON MIXIN--SIN BOOSTRAP  -->
-
-       <!-- <section class="tarjetitas container-fluid"> 
-        <div class="tarj">
-          <div class="tarj_img">
-            <img src="img/main/para_llevar/producto1.png" class="img-fluid sobre_img" alt="..."> 
-          </div>
-          <div class="tarj_text">
-            <h5 class="card-title tamañoLet text-center">$150</h5>
-              <p class="card-text text-center">Barra de Cereral</p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Mercado Pago
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Tarjeta de Crédito
-                </label>
-              </div>
-              <div class="btn-group mb-xl-2" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ciudad
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
-                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
-                </ul>
-              </div>
-              <button type="button" class="btn btn-success">¡Es mío!</button>
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        <div class="tarj1">
-          <div class="tarj_img"> 
-          </div>
-          <div class="tarj_text">
-          </div>
-        </div>
-        
-
-      </section> -->
-
+      </section> 
     </main>
     
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
     <footer class="footer container-fluid">
-      <div class="row cuadrante">
+      <div class="row cont_footer">
+
+          <!-- --------------Bloque redes sociales---------------- -->
           <div class="col-9 col-md-3 col-lg-2 col-xl-2 redes">
                 <div class="seguinos">
                   <h5>Seguinos en</h5>
@@ -593,29 +491,22 @@
                     <img src="img/footer/Instagram.png" alt="instagram"></a>
               </div>  
           </div>
+
+           <!-- --------------Bloque información del local---------------- -->
           <div class="col-9 col-md-6 col-lg-6 col-xl-4 infoBar">
             <h4>¿Cómo Nacimos?</h4>
             <p>Café & Libros, nació en 2013. Es una pequeña pyme llevada adelante por su antigua encargada Amalia Paz, que compró el fondo de comercio del antiguo bar, Lo renombro y le dió un estilo único en la ciudad. Lo que nos distingue no solo es la atmósfera artística, sino nuestra atención.</p>
           </div>
 
-
+          <!-- --------------Bloque dejanos tu sugerencia---------------- -->
           <div class="col-9 col-md-9 col-lg-8 col-xl-2 mensaje">
-
-            <!-- ----Nombre y apellido---- -->
-
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control mb-1" placeholder="Nombre y Apellido" aria-label="First name">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Escribinos tu comentario</label>
+              <label for="exampleFormControlTextarea1" class="form-label text-white">Dejanos una sugerencia</label>
               <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="2"></textarea>
               <button type="button" class="btn btn-success mb-3">¡Mandanos!</button>
               </div>
             </div>
-
-            
-
-            
-
           </div>
       </div>
     </footer>

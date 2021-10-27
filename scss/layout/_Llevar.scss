@@ -26,15 +26,16 @@
         // --------------Detalles del precio y el nombre de los productos---------
 
         .Precio{
-            font-size: $tamañoLetraUno;
-            font-family: 'Lobster', cursive;
+            font-size:25px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
         }
 
         .Prod_name{
             font-size: $tamañoLetraChica;
             font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            color:$colorTres;
+            font-weight: 300;
+            color:black;
         }
 
 }

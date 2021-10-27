@@ -8,7 +8,7 @@
     <meta name="description" content="Nuestro café, nuestra pasteleria y nuestra panadería, son obligados de esta ciudad, pero nuestra atención, es un deleite, que disfrutamos brindandotela.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Finger+Paint&family=Lobster&family=Major+Mono+Display&family=Monoton&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pruebacss.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Menú en el local</title>
@@ -21,128 +21,181 @@
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
      
      <header class="fixed-top">
-        <div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt="..."></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="local.html">En el Local</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="conocenos.html">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>                
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt=" logoBar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- --------------links a las 5 paginas---------------- -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="local.html">En el Local</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conocenos.html">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>               
+              </ul>
+
+              <!-- --------------Buscadorde info, de productos---------------- -->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-        </div>
-     </header>
+          </div>
+        </nav>
+      </div>
+    </header>
+
 
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
 
-      <main class="container-fluid margenSup">
-          <section class="row alto_fila">
-            <!-- ----cafeteria----- -->
-            <div class="col-12 col-md-6 col-xl-4 fondo_img1 pt-4">
-                <h3 class="text-center mb-3">CAFETERÍA</h3>
-                <table class="table table-hover mx-1 bg-white bg-opacity-50 rounded-3">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">CAFÉ</th>
-                        <th scope="col">DETALLES</th>
-                        <th scope="col">PRECIO</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Café bailey</td>
-                        <td>Café, licor de crema y crema</td>
-                        <td>$290</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Café Vienes</td>
-                        <td>Café y crema</td>
-                        <td>$280</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">4</th>
-                        <td>Café Mocca</td>
-                        <td>Café, chocolate y leche</td>
-                        <td>$250</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">5</th>
-                        <td>Café Irlandes</td>
-                        <td>Café wisky, crema, chocolate</td>
-                        <td>$310</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Café Bombom</td>
-                        <td>Café y leche condensada</td>
-                        <td>$290</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Café Affogato</td>
-                        <td>Café y Helado de vainilla</td>
-                        <td>$300</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Café menta</td>
-                        <td>Café, licor de menta, crema y chocolate rallado</td>
-                        <td>$350</td>
-                      </tr>
-
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Café Frozen</td>
-                        <td>Café y hielo</td>
-                        <td>$275</td>
-                      </tr>
-
-                    </tbody>
-                </table>   
+      <main class="margenSup">
+          <section class="contenedor">
+            <!-- ----Titulo----- -->
+            <div class="titulo">
+              <h1 class="titulo_cont">¡Hacé tu Reserva!</h1>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>¡Elegí un día de este mes!</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="1">4</option>
+                <option value="2">5</option>
+                <option value="3">6</option>
+                <option value="1">7</option>
+                <option value="2">8</option>
+                <option value="3">9</option>
+                <option value="1">10</option>
+                <option value="2">11</option>
+                <option value="3">12</option>
+                <option value="1">13</option>
+                <option value="2">14</option>
+                <option value="3">15</option>
+                <option value="1">16</option>
+                <option value="2">17</option>
+                <option value="3">18</option>
+                <option value="1">19</option>
+                <option value="2">20</option>
+                <option value="3">21</option>
+                <option value="1">22</option>
+                <option value="2">23</option>
+                <option value="3">24</option>
+                <option value="3">26</option>
+                <option value="1">27</option>
+                <option value="2">28</option>
+                <option value="3">29</option>
+              </select>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>¡Elegí tu mesa!</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="1">4</option>
+                <option value="2">5</option>
+                <option value="3">6</option>
+                <option value="7">4</option>
+                <option value="8">5</option>
+                <option value="9">6</option>
+              </select>
+              <a href="#"><button type="button" class="boton_2">¡Es tu mesa!</button></a>
             </div>
+            <!-- ----cafeteria----- -->
+            <div class="grid_item img_cafeteria">
+                  <h3 class="text-center text-white mb-3">Cafetería</h3>
+                  <table class="table table-hover mx-1 rounded-3">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">PRODUCTO</th>
+                          <!-- <th scope="col">DETALLES</th> -->
+                          <th scope="col">PRECIO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
 
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Café bailey</td>
+                          <!-- <td>Café, licor de crema y crema</td> -->
+                          <td>$290</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Café Vienes</td>
+                          <!-- <td>Café y crema</td> -->
+                          <td>$280</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Café Mocca</td>
+                          <!-- <td>Café, chocolate y leche</td> -->
+                          <td>$250</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Café Irlandes</td>
+                          <!-- <td>Café wisky, crema, chocolate</td> -->
+                          <td>$310</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Café Bombom</td>
+                          <!-- <td>Café y leche condensada</td> -->
+                          <td>$290</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">6</th>
+                          <td>Café Affogato</td>
+                          <!-- <td>Café y Helado de vainilla</td> -->
+                          <td>$300</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">7</th>
+                          <td>Café menta</td>
+                          <!-- <td>Café, licor de menta, crema y chocolate rallado</td> -->
+                          <td>$350</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">8</th>
+                          <td>Café Frozen</td>
+                          <!-- <td>Café y hielo</td> -->
+                          <td>$275</td>
+                        </tr>
+
+                      </tbody>
+                  </table>   
+            </div>
+           
              <!-- ----Pasteleria----- -->
-            <div class="col-12 col-md-6 col-xl-4 fondo_img2 pt-4">
-                <h3 class="text-center mb-3">PASTELERIA</h3>
-                <table class="table table-hover mx-1 bg-white bg-opacity-50 rounded-3">
+            <div class="grid_item img_pasteleria">
+                <h3 class="text-center text-white mb-3">Pastelería</h3>
+                <table class="table table-hover mx-1 rounded-3">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">CAFÉ</th>
-                        <th scope="col">DETALLES</th>
+                        <th scope="col">PRODUCTO</th>
+                        <!-- <th scope="col">DETALLES</th> -->
                         <th scope="col">PRECIO</th>
                       </tr>
                     </thead>
@@ -150,57 +203,57 @@
 
                       <tr>
                         <th scope="row">1</th>
-                        <td>Café bailey</td>
-                        <td>Café, licor de crema y crema</td>
+                        <td>Pastafrola</td>
+                        <!-- <td>Café, licor de crema y crema</td> -->
                         <td>$290</td>
                       </tr>
 
                       <tr>
                         <th scope="row">2</th>
-                        <td>Café Vienes</td>
-                        <td>Café y crema</td>
+                        <td>Torta invertida</td>
+                        <!-- <td>Café y crema</td> -->
                         <td>$280</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">4</th>
-                        <td>Café Mocca</td>
-                        <td>Café, chocolate y leche</td>
+                        <th scope="row">3</th>
+                        <td>Lemon Pie</td>
+                        <!-- <td>Café, chocolate y leche</td> -->
                         <td>$250</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">5</th>
-                        <td>Café Irlandes</td>
-                        <td>Café wisky, crema, chocolate</td>
+                        <th scope="row">4</th>
+                        <td>Torta de Ricota</td>
+                        <!-- <td>Café wisky, crema, chocolate</td> -->
                         <td>$310</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Bombom</td>
-                        <td>Café y leche condensada</td>
+                        <th scope="row">5</th>
+                        <td>Torta de chocolate y nutela</td>
+                        <!-- <td>Café y leche condensada</td> -->
                         <td>$290</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Affogato</td>
-                        <td>Café y Helado de vainilla</td>
+                        <th scope="row">6</th>
+                        <td>Tarta de frutas</td>
+                        <!-- <td>Café y Helado de vainilla</td> -->
                         <td>$300</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café menta</td>
-                        <td>Café, licor de menta, crema y chocolate rallado</td>
+                        <th scope="row">7</th>
+                        <td>Victoria Sponge</td>
+                        <!-- <td>Café, licor de menta, crema y chocolate rallado</td> -->
                         <td>$350</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Frozen</td>
-                        <td>Café y hielo</td>
+                        <th scope="row">8</th>
+                        <td>Brownie con crema</td>
+                        <!-- <td>Café y hielo</td> -->
                         <td>$275</td>
                       </tr>
 
@@ -209,14 +262,14 @@
             </div>
 
              <!-- ----Panaderia----- -->
-            <div class="col-12 col-md-12 col-xl-4 fondo_img3 pt-4">
-                <h3 class="text-center mb-3">PANADERIA</h3>
-                <table class="table table-hover mx-1 bg-white bg-opacity-50 rounded-3">
+            <div class="grid_item img_panaderia">
+                <h3 class="text-center text-white mb-3">Panadería</h3>
+                <table class="table table-hover mx-1 rounded-3">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col">CAFÉ</th>
-                        <th scope="col">DETALLES</th>
+                        <th scope="col">PRODUCTO</th>
+                        <!-- <th scope="col">DETALLES</th> -->
                         <th scope="col">PRECIO</th>
                       </tr>
                     </thead>
@@ -224,57 +277,57 @@
 
                       <tr>
                         <th scope="row">1</th>
-                        <td>Café bailey</td>
-                        <td>Café, licor de crema y crema</td>
+                        <td>Medialunas</td>
+                        <!-- <td>Café, licor de crema y crema</td> -->
                         <td>$290</td>
                       </tr>
 
                       <tr>
                         <th scope="row">2</th>
-                        <td>Café Vienes</td>
-                        <td>Café y crema</td>
+                        <td>Medialunas con jamón y queso</td>
+                        <!-- <td>Café y crema</td> -->
                         <td>$280</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">4</th>
-                        <td>Café Mocca</td>
-                        <td>Café, chocolate y leche</td>
+                        <th scope="row">3</th>
+                        <td>Porción de chipá</td>
+                        <!-- <td>Café, chocolate y leche</td> -->
                         <td>$250</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">5</th>
-                        <td>Café Irlandes</td>
-                        <td>Café wisky, crema, chocolate</td>
+                        <th scope="row">4</th>
+                        <td>Triple tostado de verdura</td>
+                        <!-- <td>Café wisky, crema, chocolate</td> -->
                         <td>$310</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Bombom</td>
-                        <td>Café y leche condensada</td>
+                        <th scope="row">5</th>
+                        <td>Triple tostado de jamón y queso</td>
+                        <!-- <td>Café y leche condensada</td> -->
                         <td>$290</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Affogato</td>
-                        <td>Café y Helado de vainilla</td>
+                        <th scope="row">6</th>
+                        <td>bizcochos de manteca</td>
+                        <!-- <td>Café y Helado de vainilla</td> -->
                         <td>$300</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café menta</td>
-                        <td>Café, licor de menta, crema y chocolate rallado</td>
+                        <th scope="row">7</th>
+                        <td>Tostado en pan de campo</td>
+                        <!-- <td>Café, licor de menta, crema y chocolate rallado</td> -->
                         <td>$350</td>
                       </tr>
 
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Café Frozen</td>
-                        <td>Café y hielo</td>
+                        <th scope="row">8</th>
+                        <td>Sandwich en pan Árabe</td>
+                        <!-- <td>Café y hielo</td> -->
                         <td>$275</td>
                       </tr>
 
@@ -288,7 +341,9 @@
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
 
     <footer class="footer container-fluid">
-      <div class="row cuadrante">
+      <div class="row cont_footer">
+
+          <!-- --------------Bloque redes sociales---------------- -->
           <div class="col-9 col-md-3 col-lg-2 col-xl-2 redes">
                 <div class="seguinos">
                   <h5>Seguinos en</h5>
@@ -300,29 +355,22 @@
                     <img src="img/footer/Instagram.png" alt="instagram"></a>
               </div>  
           </div>
+
+           <!-- --------------Bloque información del local---------------- -->
           <div class="col-9 col-md-6 col-lg-6 col-xl-4 infoBar">
             <h4>¿Cómo Nacimos?</h4>
             <p>Café & Libros, nació en 2013. Es una pequeña pyme llevada adelante por su antigua encargada Amalia Paz, que compró el fondo de comercio del antiguo bar, Lo renombro y le dió un estilo único en la ciudad. Lo que nos distingue no solo es la atmósfera artística, sino nuestra atención.</p>
           </div>
 
-
+          <!-- --------------Bloque dejanos tu sugerencia---------------- -->
           <div class="col-9 col-md-9 col-lg-8 col-xl-2 mensaje">
-
-            <!-- ----Nombre y apellido---- -->
-
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control mb-1" placeholder="Nombre y Apellido" aria-label="First name">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Escribinos tu comentario</label>
+              <label for="exampleFormControlTextarea1" class="form-label text-white">Dejanos una sugerencia</label>
               <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="2"></textarea>
               <button type="button" class="btn btn-success mb-3">¡Mandanos!</button>
               </div>
             </div>
-
-            
-
-            
-
           </div>
       </div>
     </footer>

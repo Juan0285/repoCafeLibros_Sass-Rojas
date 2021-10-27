@@ -19,45 +19,50 @@
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
      <header class="fixed-top">
-        <div>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt="..."></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="local.html">En el Local</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="conocenos.html">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>                
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt=" logoBar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- --------------links a las 5 paginas---------------- -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="local.html">En el Local</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conocenos.html">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>               
+              </ul>
+
+              <!-- --------------Buscadorde info, de productos---------------- -->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-        </div>
-      </header>
+          </div>
+        </nav>
+      </div>
+     </header>
+
 
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
 
       <main class="container-fluid margenSup_Cont bg-secondary pt-5 pb-1">
-        <h1>Estamos en contacto</h1>
+        <h1 class="titulo_cont">Estamos en contacto</h1>
         <section class="row">
 
           <!-- -------------------MAPA------------------- -->
@@ -139,9 +144,10 @@
 
        
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
-
     <footer class="footer container-fluid">
-      <div class="row cuadrante">
+      <div class="row cont_footer">
+
+          <!-- --------------Bloque redes sociales---------------- -->
           <div class="col-9 col-md-3 col-lg-2 col-xl-2 redes">
                 <div class="seguinos">
                   <h5>Seguinos en</h5>
@@ -153,29 +159,22 @@
                     <img src="img/footer/Instagram.png" alt="instagram"></a>
               </div>  
           </div>
+
+           <!-- --------------Bloque información del local---------------- -->
           <div class="col-9 col-md-6 col-lg-6 col-xl-4 infoBar">
             <h4>¿Cómo Nacimos?</h4>
             <p>Café & Libros, nació en 2013. Es una pequeña pyme llevada adelante por su antigua encargada Amalia Paz, que compró el fondo de comercio del antiguo bar, Lo renombro y le dió un estilo único en la ciudad. Lo que nos distingue no solo es la atmósfera artística, sino nuestra atención.</p>
           </div>
 
-
+          <!-- --------------Bloque dejanos tu sugerencia---------------- -->
           <div class="col-9 col-md-9 col-lg-8 col-xl-2 mensaje">
-
-            <!-- ----Nombre y apellido---- -->
-
             <div class="row">
               <div class="col">
-                <input type="text" class="form-control mb-1" placeholder="Nombre y Apellido" aria-label="First name">
-                <label for="exampleFormControlTextarea1" class="form-label text-white">Escribinos tu comentario</label>
+              <label for="exampleFormControlTextarea1" class="form-label text-white">Dejanos una sugerencia</label>
               <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="2"></textarea>
               <button type="button" class="btn btn-success mb-3">¡Mandanos!</button>
               </div>
             </div>
-
-            
-
-            
-
           </div>
       </div>
     </footer>
